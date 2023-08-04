@@ -5,30 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vendor/bootstrap/solar.css">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <title>HOME</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <title>Website Kopi Kuy</title>
     <link rel="stylesheet" href="css/tes.css">
+    <link rel="stylesheet" href="vendor/bootstrap/solar.css">
     <link rel="stylesheet" href="vendor/bootstrap/bootstrap-icons.css">
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <style>    img.logo {
+        /* height mengatur tinggi elemen */
+        height: 60px;
+        width: 120px;
+        /* penjelasan margin mirip dengan padding, fungsinya untuk memberi jarak pada elemen */
+        margin-left: 40px;
+     }
+     
+          #huruf a{
+                 color: black;
+                 font-weight: bold;
+             }
+             
+             .pilih{
+                 color: black;
+                 margin-top: 5px;
+             }
+             #nava {
+        background-color: #4612ca;
+        /* box-shadow membuat efek bayangan */
+        box-shadow: 0 3px 7px -2px #000;
+        /* width mengatur lebar elemen. 100% agar lebarnya full dari kiri sampai kanan layar */
+        width: 100%;
+        font-weight: bold;
+        font-size: 15pt;
+     }
+            
+     #nava :hover{
+        transition: all 0.3s ease;
+     
+        /* border-radius  Membuat sudut membulat */
+        border-radius: 15px;
+        padding-bottom: 2px;
+        color: black;
+        /* box-shadow membuat efek bayangan */
+        
+     }
+     
+      #huruf a {
+        color: aqua;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-left: 0%;
+        
+     }</style>
 </head>
 
 <body>
-    <nav>
-        <img class="logo" src="images/logo/logo_kuy.png">
-        <div class="navigasi">
-            <b>
-               
-            <a href="#best-seller">Best Seller</a>
-          <!-- <a href="#about-us">About Us</a> -->
-            <a href="#our-team">Our Team</a>
-            <a href="#review">Review</a>
-            <a href="#contact-us">Contact Us</a>
-        
-        
-        <a class="shop" href="produk.html">Shop</a></b>
-        <a class="btn btn-outline-light" target="_blank" href="https://wa.me/6281290465033">
-                    <i class="bi bi-whatsapp"></i> Chat</a> </div>
-    </nav>
+   <nav id="nava" class="navbar navbar-dark navbar-expand-lg bisadicopy">
+    <div class="container">
+      <a class="navbar-brand" href="https://www.rikikurnia.com">
+        <img class="logo" src="images/logo/logo_kuy.png" height="40" alt="image">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav11" aria-controls="navbarNav11" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav11">
+        <ul id="huruf" class="navbar-nav ms-auto btn-outline-light">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#best-seller">Best Seller</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#our-team">Our Team</a>
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html#review">Review</a>
+              </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact-us">Contact Us</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="produk.html">Shop</a>
+          </li>
+
+        </ul>
+        <a class="btn btn-outline-light ms-md-3" href="https://wa.me/6281290465033">
+          <i class="bi bi-whatsapp"></i> Chat</a>
+      </div>
+    </div>
+  </nav>
 
     <!-- Tulis Kode HTML / <header> Setelah baris di bawah ini (baris 28) -->
 
@@ -196,7 +261,7 @@
         <p>© 2023 Kopi Kuy. All Rights Reserved</p>
     </b>
     </footer>
-
+   
 
     <!--
         Kode HTML tidak boleh lewat dari batas ini
